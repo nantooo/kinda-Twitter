@@ -17,6 +17,9 @@ span.naoty {
   // or backgroud-image: url(image-path("naoty.png"))
 }
 body {
+  background-image: image-url("images.jpeg") ;
+  background-repeat: repeat;
+  background-size: 100%;
     padding-top: 60px;
   }
   
