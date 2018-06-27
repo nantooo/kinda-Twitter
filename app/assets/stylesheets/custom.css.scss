@@ -1,7 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap/dropdowns";
-
+@import './mixin/fonts';
+@include font-face('starwars', './fonts/Starjout.ttf', null, null, ttf);
 /* mixins, variables, etc. */
 
 $gray-medium-light:#eaeaea;
@@ -10,6 +11,10 @@ $gray-medium-light:#eaeaea;
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
+}
+span.naoty {
+  background-image: image-url("/assets/images/images.jpeg") //=> url(/assets/naoty.png)
+  // or backgroud-image: url(image-path("naoty.png"))
 }
 body {
     padding-top: 60px;
@@ -38,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h1 {
+    background-image: image-url("/images/images.jpeg");
     font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 30px;
@@ -60,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   /* header */
 
 #logo {
+    font-family: starwars;
     float: left;
     margin-right: 10px;
     font-size: 1.7em;
@@ -67,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: -1px;
     padding-top: 9px;
-    font-weight: bold;
+    
   }
   
   #logo:hover {

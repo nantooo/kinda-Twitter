@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <title><%= yield(:title) %> | The Movie World</title>
   </head>
     <body>
 <% if logged_in? %>
+  
   <div class="row">
     <aside class="col-md-4">
       <section class="user_info">
@@ -20,24 +21,26 @@
     </aside>
      <div class="col-md-8">
       <h3>Micropost Feed</h3>
+       
+     <%= render 'users/search' %>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
+
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+  <h1>Welcome to the Movie World</h1>
 
   <h2>
     This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    <a href="https://www.imdb.com/">Internet Movie Database (IMDb)</a>.
   </h2>
 
   <%= link_to "Sign up now!", new_user_path, class: "btn btn-lg btn-primary" %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+<%= link_to image_tag("movie.jpg", alt: "Rails logo"),
+            'https://www.imdb.com/' %>
  <% end %>
  </body>
 </html>
