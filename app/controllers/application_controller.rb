@@ -1,9 +1,4 @@
 class ApplicationController < ActionController::Base
-    def new
-    end
-    def create
-    
-    session[:id] = user.id
-    end
-    
+    protect_from_forgery with: :exception
+    include SessionsHelper
 end
