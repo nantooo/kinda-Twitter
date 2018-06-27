@@ -14,15 +14,15 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 group :development, :test do
-  gem 'sqlite3',     '1.3.9'
+  gem 'sqlite3',     '>=1.3.9'
   gem 'byebug',      platforms: [:mri, :mingw, :x64_mingw]
   gem 'web-console', '>= 3.3.0'
   gem 'spring'  
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg',             '>=0.17.1'
+  gem 'rails_12factor', '>=0.0.2'
 end
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
