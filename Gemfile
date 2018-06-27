@@ -6,7 +6,9 @@ gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use mysql as the database for Active Record
-
+gem 'carrierwave',             '>=0.10.0'
+gem 'mini_magick',             '>=3.8.0'
+gem 'fog',                     '>=1.36.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
