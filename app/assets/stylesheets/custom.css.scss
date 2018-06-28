@@ -3,6 +3,8 @@
 @import "bootstrap/dropdowns";
 @import './mixin/fonts';
 @include font-face('starwars', './fonts/Starjout.ttf', null, null, ttf);
+
+@include font-face('yojo', './fonts/JiyunoTsubasa.ttf', null, null, ttf);
 /* mixins, variables, etc. */
 
 $gray-medium-light:#eaeaea;
@@ -46,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h1 {
-    background-image: image-url("/images/images.jpeg");
+    
     font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 30px;
@@ -258,6 +260,7 @@ input, textarea, select, .uneditable-input {
     padding-top: 0;
   }
   .content {
+    font-family: yojo;
     display: block;
     margin-left: 60px;
     img {
